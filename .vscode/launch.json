@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "d:\\Projects\\codezilla-website\\index.html"
+            "file": "d:\\Projects\\engineernassar\\index.html"
         }
     ]
 }

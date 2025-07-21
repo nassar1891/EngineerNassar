@@ -5,186 +5,245 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahmoud Nassar - .NET & Flutter Software Engineer</title>
+  <meta name="description" content="Passionate Software Engineer with 2+ years of experience in .NET and Flutter. Teaching Assistant, Lead Instructor, and project leader." />
+  <meta name="author" content="Mahmoud Nassar" />
+  <link rel="canonical" href="https://mahmoudnassar.com/" />
+  <meta name="theme-color" content="#1EAECD" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mahmoud Nassar - .NET & Flutter Software Engineer" />
+  <meta property="og:description" content="Portfolio of Mahmoud Nassar, Software Engineer, Instructor, and Project Leader." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mahmoudnassar.com/" />
+  <meta property="og:image" content="images/بروفايل.jpg" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mahmoud Nassar - .NET & Flutter Software Engineer" />
+  <meta name="twitter:description" content="Portfolio of Mahmoud Nassar, Software Engineer, Instructor, and Project Leader." />
+  <meta name="twitter:image" content="images/بروفايل.jpg" />
+
+  <!-- Favicon & Apple Touch Icon -->
   <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Google Fonts (with display swap) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style - new.css" />
+  <link rel="stylesheet" href="style.css" />
 
-  <title>Mahmoud Nassar</title>
+  <!-- Manifest for PWA (optional) -->
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+
+  <!-- Google Analytics (optional) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXXX-X');
+  </script> -->
 </head>
 
 <body>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-indicator" id="scrollIndicator"></div>
 
   <header>
-    <a href="#" class="logo">
+    <a href="#" class="logo" aria-label="Engineer Nassar Home">
       <img src="images/white-logo.png" alt="Engineer Nassar Logo" />
     </a>
-    <nav class="navigation">
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <nav class="navigation" role="navigation" aria-label="Main navigation">
+      <a href="#services" aria-label="Go to Services section">Services</a>
+      <a href="#projects" aria-label="Go to Projects section">Projects</a>
+      <a href="#contact" aria-label="Go to Contact section">Contact</a>
     </nav>
   </header>
 
-  <section class="main">
-    <div class="main-container">
-      <div class="main-text">
-        <span>Mahmoud Nassar</span>
-        <h2>
-          <ul style="font-size: large; margin-left: 15px; font-size: 1em;">
-            <li>Software Engineer (.Net & Flutter)</li>
-            <li>Owner of <a href="https://teachermanager.mahmoudnassar.com/" target="_blank">Teacher Manager</a></li>
-            <li>Teaching Assistant at Faculty of Engineering</li>
-            <li>Part time instructor at ITI</li>
-            <li>Software engineering lead instructor at <a href="https://teachermanager.mahmoudnassar.com/" target="_blank">SkillZad</a></li>
-          </ul>
-        </h2>
-        <div>
-          <h3 class="main-quote">"Ask .. and you shall receive"</h3>
-          <div class="cta-row">
-            <a href="https://drive.google.com/file/d/1tl3id64CiIKXW0fKcVyMZqQ5pMZ1rVOw/view?usp=sharing" target="_blank" class="main-btn">View my CV</a>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/nassar4869/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="https://api.whatsapp.com/send/?phone=201026212087" target="_blank"><i
-                  class="fab fa-whatsapp"></i></a>
-              <a href="https://www.facebook.com/Nassar1891" target="_blank"><i class="fab fa-facebook"></i></a>
-              <a href="https://www.youtube.com/@EngineerNassar" target="_blank"><i class="fab fa-youtube"></i></a>
+  <main>
+    <section class="main" id="home">
+      <div class="main-container">
+        <div class="main-text">
+          <h1><span>Mahmoud Nassar</span></h1>
+          <div class="professional-summary">
+            <p class="summary-text">
+              Passionate Software Engineer with 2+ years of experience in <strong>.NET</strong> and <strong>Flutter</strong> development. 
+              Proven track record of delivering scalable web and mobile solutions. 
+              Currently serving as Teaching Assistant and Lead Instructor, mentoring 100+ students in software engineering principles.
+            </p>
+          </div>
+          <div class="main-description">
+            <ul>
+              <li>Software Engineer (.Net & Flutter)</li>
+              <li>Owner of <a href="https://teachermanager.mahmoudnassar.com/" target="_blank" rel="noopener noreferrer">Teacher Manager</a></li>
+              <li>Teaching Assistant at Faculty of Engineering</li>
+              <li>Part time instructor at ITI</li>
+              <li>Software engineering lead instructor at <a href="https://teachermanager.mahmoudnassar.com/" target="_blank" rel="noopener noreferrer">SkillZad</a></li>
+            </ul>
+          </div>
+          <div>
+            <blockquote class="main-quote">"Ask .. and you shall receive"</blockquote>
+            <div class="cta-row">
+              <a href="https://drive.google.com/file/d/1tl3id64CiIKXW0fKcVyMZqQ5pMZ1rVOw/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="main-btn">View my CV</a>
+              <div class="social-icons" role="group" aria-label="Social media links">
+                <a href="https://www.linkedin.com/in/nassar4869/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=201026212087" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Contact"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/Nassar1891" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/@EngineerNassar" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="main-image">
-        <img src="images/بروفايل.jpg" alt="Mahmoud Nassar" />
-      </div>
-    </div>
-  </section>
-
-
-  <section class="cards" id="services">
-    <h2 class="title">Services</h2>
-    <div class="content">
-      <div class="card">
-        <div class="icon"><i class="fas fa-edit"></i></div>
-        <div class="info">
-          <h3>Developing</h3>
-          <p>Create an attractive website & mobile app for your business</p>
+        <div class="main-image">
+          <img src="images/بروفايل.jpg" alt="Mahmoud Nassar - Software Engineer and Instructor" />
         </div>
       </div>
-      <div class="card">
-        <div class="icon"><i class="fas fa-video"></i></div>
-        <div class="info">
-          <h3>Online courses</h3>
-          <p>I can guide you through different topics of Electrical Engineering and Computer Sciences</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Slider -->
-  <section class="projects" id="projects">
-    <h2 class="title" style="color: white;">Projects</h2>
+    <!-- Projects Slider -->
+    <section class="projects" id="projects">
+      <h2 class="title">Projects</h2>
 
-    <!-- NEW FLEX CONTAINER -->
-    <div class="swiper-wrapper-container">
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-wrapper-container">
+        <button class="swiper-button-prev" aria-label="Previous project"></button>
 
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide project-card">
-            <div class="project-image">
-              <img src="images/teacherManager.png" alt="Teacher Manager" />
-            </div>
-            <div class="project-details">
-              <h3 class="project-name">Teacher Manager</h3>
-              <a href="https://teachermanager.mahmoudnassar.com/" target="_blank" class="more-details">More details</a>
-            </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <article class="swiper-slide project-card">
+              <div class="project-image">
+                <img src="images/teacherManager.png" alt="Teacher Manager Application Interface" />
+              </div>
+              <div class="project-details">
+                <h3 class="project-name">Teacher Manager</h3>
+                <p class="project-description">Comprehensive educational management system serving 50+ teachers and 10,000+ students</p>
+                <div class="project-tech">
+                  <span class="tech-badge">ASP.NET Core</span>
+                  <span class="tech-badge">AJAX</span>
+                  <span class="tech-badge">jQuery</span>
+                  <span class="tech-badge">Entity Framework</span>
+                  <span class="tech-badge">LINQ</span>
+                  <span class="tech-badge">SQL Server</span>
+                </div>
+                <a href="https://teachermanager.mahmoudnassar.com/" target="_blank" rel="noopener noreferrer" class="more-details">View Project</a>
+              </div>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="swiper-slide project-card">
+              <div class="project-image">
+                <img src="images/exam.jpg" alt="Exam System Interface" />
+              </div>
+              <div class="project-details">
+                <h3 class="project-name">Exam System</h3>
+                <p class="project-description">Automated examination platform with AI-powered question generation and real-time analytics</p>
+                <div class="project-tech">
+                  <span class="tech-badge">Angular</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">TypeScript</span>
+                  <span class="tech-badge">Bootstrap</span>
+                  <span class="tech-badge">jQuery</span>
+                </div>
+                <a href="https://github.com/nassar1891/Examination-System" target="_blank" rel="noopener noreferrer" class="more-details">View Code</a>
+              </div>
+            </article>
+
+            <!-- Slide 3 -->
+            <article class="swiper-slide project-card">
+              <div class="project-image">
+                <img src="images/hr.png" alt="HR System Interface" />
+              </div>
+              <div class="project-details">
+                <h3 class="project-name">HR System</h3>
+                <p class="project-description">Enterprise HR management solution with employee lifecycle management and performance tracking</p>
+                <div class="project-tech">
+                  <span class="tech-badge">ASP.NET Core</span>
+                  <span class="tech-badge">Entity Framework</span>
+                  <span class="tech-badge">LINQ</span>
+                  <span class="tech-badge">SQL Server</span>
+                </div>
+                <a href="https://github.com/nassar1891/HrProject" target="_blank" rel="noopener noreferrer" class="more-details">View Code</a>
+              </div>
+            </article>
+
+            <!-- Slide 4 -->
+            <article class="swiper-slide project-card">
+              <div class="project-image">
+                <img src="images/medline.png" alt="Medline Application Interface" />
+              </div>
+              <div class="project-details">
+                <h3 class="project-name">Medline</h3>
+                <p class="project-description">Healthcare management system with patient records, appointment scheduling, and medical inventory</p>
+                <div class="project-tech">
+                  <span class="tech-badge">Flutter</span>
+                  <span class="tech-badge">Firebase</span>
+                  <span class="tech-badge">Dart</span>
+                  <span class="tech-badge">Rest API</span>
+                </div>
+                <a href="https://github.com/nassar1891/Medline" target="_blank" rel="noopener noreferrer" class="more-details">View Code</a>
+              </div>
+            </article>
           </div>
-
-          <!-- Slide 2 -->
-          <div class="swiper-slide project-card">
-            <div class="project-image">
-              <img src="images/exam.jpg" alt="Exam" />
-            </div>
-            <div class="project-details">
-              <h3 class="project-name">Exam System</h3>
-              <a href="https://github.com/nassar1891/Examination-System" target="_blank" class="more-details">More
-                details</a>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="swiper-slide project-card">
-            <div class="project-image">
-              <img src="images/hr.png" alt="HR" />
-            </div>
-            <div class="project-details">
-              <h3 class="project-name">HR System</h3>
-              <a href="https://github.com/nassar1891/HrProject" target="_blank" class="more-details">More details</a>
-            </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="swiper-slide project-card">
-            <div class="project-image" style="margin-top: 10;">
-              <img src="images/medline.png" alt="Medline" />
-            </div>
-            <div class="project-details">
-              <h3 class="project-name">Medline</h3>
-              <a href="https://github.com/nassar1891/Medline" target="_blank" class="more-details">More details</a>
-            </div>
-          </div>
+          <div class="swiper-pagination" role="tablist" aria-label="Project navigation"></div>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
 
-      <div class="swiper-button-next"></div>
-    </div>
-  </section>
+        <button class="swiper-button-next" aria-label="Next project"></button>
+      </div>
+    </section>
 
-  <section class="cards contact" id="contact">
-    <h2 class="title">Let's work together</h2>
-    <div class="content">
-      <div class="card">
-        <div class="icon"><i class="fas fa-phone"></i></div>
-        <div class="info">
-          <h3>Phone</h3>
-          <p>+201026212087</p>
-        </div>
+    <section class="cards contact" id="contact">
+      <h2 class="title">Let's work together</h2>
+      <div class="content">
+        <article class="card">
+          <div class="icon" aria-hidden="true"><i class="fas fa-phone"></i></div>
+          <div class="info">
+            <h3>Phone</h3>
+            <p><a href="tel:+201026212087">+201026212087</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+          <div class="info">
+            <h3>Email</h3>
+            <p><a href="mailto:nassar4869@gmail.com">nassar4869@gmail.com</a></p>
+          </div>
+        </article>
       </div>
-      <div class="card">
-        <div class="icon"><i class="fas fa-envelope"></i></div>
-        <div class="info">
-          <h3>Email</h3>
-          <p>nassar4869@gmail.com</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
     <p class="footer-title">© 2025 All rights reserved</p>
 
-    <a href="#" class="logo">
+    <a href="#" class="logo" aria-label="Engineer Nassar Home">
       <img src="images/white-logo.png" alt="Engineer Nassar Logo" />
     </a>
 
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/nassar4869/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://api.whatsapp.com/send/?phone=201026212087" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://www.facebook.com/Nassar1891" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.youtube.com/@EngineerNassar" target="_blank"><i class="fab fa-youtube"></i></a>
+    <div class="social-icons" role="group" aria-label="Social media links">
+      <a href="https://www.linkedin.com/in/nassar4869/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://api.whatsapp.com/send/?phone=201026212087" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Contact"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/Nassar1891" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/@EngineerNassar" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel"><i class="fab fa-youtube" aria-hidden="true"></i></a>
     </div>
   </footer>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
+    // Initialize Swiper
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 30,
@@ -210,9 +269,83 @@
           spaceBetween: 30
         }
       }
-
     });
 
+    // Scroll Progress Indicator
+    window.addEventListener('scroll', function() {
+      const scrollIndicator = document.getElementById('scrollIndicator');
+      const scrollTop = window.pageYOffset;
+      const docHeight = document.body.offsetHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      scrollIndicator.style.transform = `scaleX(${scrollPercent / 100})`;
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add typing effect to professional summary
+    function typeWriter(element, text, speed = 50) {
+      let i = 0;
+      element.innerHTML = '';
+      
+      function type() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, speed);
+        }
+      }
+      type();
+    }
+
+    // Initialize typing effect when page loads
+    window.addEventListener('load', function() {
+      const summaryText = document.querySelector('.summary-text');
+      if (summaryText) {
+        const originalText = summaryText.textContent;
+        typeWriter(summaryText, originalText, 30);
+      }
+    });
+
+    // Add hover effects for project cards
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-15px) scale(1.02)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+
+    // Add click tracking for analytics (if needed)
+    document.querySelectorAll('a[target="_blank"]').forEach(link => {
+      link.addEventListener('click', function() {
+        // You can add analytics tracking here
+        console.log('External link clicked:', this.href);
+      });
+    });
   </script>
 
 </body>

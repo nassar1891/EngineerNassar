@@ -1,0 +1,354 @@
+section,
+.main {
+  padding-top: 70px;
+}
+
+/* Enhanced Main Section */
+section {
+  padding: 100px 120px;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-size: contain;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23ffffff" opacity="0.1"><polygon points="0,0 1000,100 1000,0"/></svg>') no-repeat center center;
+  background-size: cover;
+  pointer-events: none;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.main-text {
+  flex: 1 1 400px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+}
+
+.main-image {
+  flex: 0 0 420px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+}
+
+.main-image img {
+  max-width: 420px;
+  width: auto;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.main-image img:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+.main h2 {
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #1B2250;
+}
+
+.main span {
+  display: inline-block;
+  margin: 10px 0;
+  color: #1B2250;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.main-text ul {
+  width: fit-content;
+  margin-left: 0;
+  padding-left: 5px;
+}
+
+.main-text li {
+  width: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  white-space: nowrap;
+}
+
+.main h3 {
+  color: #1EAECD;
+  font-size: 1.7em;
+  margin: 20px 0;
+}
+
+.main-btn {
+  background: linear-gradient(135deg, #1B2250 0%, #2a3a70 100%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(27, 34, 80, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.main-btn:hover::before {
+  left: 100%;
+}
+
+.main-btn:hover {
+  background: linear-gradient(135deg, #2a3a70 0%, #1B2250 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(27, 34, 80, 0.4);
+}
+
+.cta-block {
+  margin-top: 32px;
+  width: 320px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-quote {
+  font-size: 1em;
+  color: #1EAECD;
+  font-weight: 600;
+  font-family: cursive;
+  margin-bottom: 18px;
+  text-align: left;
+  width: 100%;
+  position: relative;
+}
+
+.cta-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+}
+
+.cta-row .main-btn {
+  margin: 0;
+}
+
+.cta-row .social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  color: #1B2250;
+  font-size: 1.7em;
+  margin-right: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.social-icons a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(30, 174, 205, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.social-icons a:hover {
+  color: #1EAECD;
+  transform: translateY(-3px);
+}
+
+.social-icons a:hover i {
+  color: #1EAECD;
+}
+
+.social-icons a:hover::before {
+  width: 40px;
+  height: 40px;
+}
+
+.main a:not(.main-btn) {
+  text-decoration: none;
+  font-weight: 520;
+  color: inherit;
+}
+
+.main a {
+  display: inline-block;
+}
+
+.main a:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  color: #1EAECD;
+}
+
+/* Enhanced Cards */
+.title {
+  text-align: center;
+  color: #1B2250;
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #1EAECD, #1B2250);
+  transform: translateX(-50%);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  color: #1B2250;
+  width: 20em;
+  margin: 0;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1EAECD, #1B2250);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card .icon {
+  color: #1EAECD;
+  font-size: 4em;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.card:hover .icon {
+  transform: scale(1.1);
+  color: #1B2250;
+}
+
+.info h3 {
+  font-size: 1.3em;
+  margin: 15px 0;
+  color: #1B2250;
+  font-weight: 600;
+}
+
+.info p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.info p a {
+  color: #1EAECD;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info p a:hover {
+  color: #1B2250;
+  text-decoration: underline;
+}
+
+/* Main Description Styles */
+.main-description {
+  margin: 20px 0;
+}
+
+.main-description ul {
+  width: fit-content;
+  margin-left: 0;
+  padding-left: 5px;
+}
+
+.main-description li {
+  width: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  white-space: nowrap;
+  margin-bottom: 8px;
+}
+
+/* Blockquote Styles */
+.main-quote {
+  font-size: 1em;
+  color: #1EAECD;
+  font-weight: 600;
+  font-family: cursive;
+  margin-bottom: 18px;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  font-style: italic;
+  border-left: 3px solid #1EAECD;
+  padding-left: 15px;
+}

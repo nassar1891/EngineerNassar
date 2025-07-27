@@ -119,6 +119,7 @@
 }
 .more-details:hover {
   background: linear-gradient(135deg, #17a2b8 0%, #1EAECD 100%);
+  color: #1B2250;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(30, 174, 205, 0.3);
 }

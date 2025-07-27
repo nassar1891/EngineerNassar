@@ -29,16 +29,6 @@ body {
   animation: fadeInUp 0.6s ease-out;
 }
 
-/* Scroll Indicator */
-
-
-/* Focus Styles for Accessibility */
-a:focus,
-button:focus {
-  outline: 2px solid #1EAECD;
-  outline-offset: 2px;
-}
-
 /* Responsive Design */
 @media (max-width: 1100px) {
   section,
@@ -222,12 +212,6 @@ button:focus {
     padding: 0 20px;
   }
   
-  .footer {
-    padding: 20px;
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
 
   .skills-container {
     padding: 0 10px;

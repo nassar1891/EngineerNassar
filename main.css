@@ -1,12 +1,9 @@
-section,
-.main {
-  padding-top: 70px;
-}
 
 /* Enhanced Main Section */
 section {
   padding: 100px 120px;
 }
+
 
 .main {
   min-height: 100vh;
@@ -90,13 +87,13 @@ section {
 .main-text ul {
   width: fit-content;
   margin-left: 0;
-  padding-left: 5px;
+  padding-left: 5px; /* keeps bullet alignment */
 }
 
 .main-text li {
   width: fit-content;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  white-space: nowrap;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  white-space: nowrap; /* optional: prevents wrapping if you want single-line items */
 }
 
 .main h3 {
@@ -179,7 +176,8 @@ section {
 .social-icons a {
   color: #1B2250;
   font-size: 1.7em;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   transition: all 0.3s ease;
   position: relative;
 }

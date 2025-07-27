@@ -49,12 +49,10 @@
 .footer .social-icons a {
   color: #fff;
   font-size: 1.4em;
-  margin-right: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
   transition: all 0.3s ease;
   position: relative;
-}
-.footer .social-icons a:last-child {
-  margin-right: 0;
 }
 .footer .social-icons a::before {
   content: '';

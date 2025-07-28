@@ -49,11 +49,8 @@ section {
 }
 
 .main-image {
-  flex: 0 0 420px;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  opacity: 0;
   animation: fadeInUp 0.8s ease-out 0.4s forwards;
 }
 
@@ -99,7 +96,7 @@ section {
 .main h3 {
   color: #1EAECD;
   font-size: 1.7em;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .main-btn {
@@ -176,8 +173,8 @@ section {
 .social-icons a {
   color: #1B2250;
   font-size: 1.7em;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
   transition: all 0.3s ease;
   position: relative;
 }
